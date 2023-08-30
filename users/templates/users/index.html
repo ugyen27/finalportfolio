@@ -1,0 +1,809 @@
+{% load static %}
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+        <title>ugyen-portfolio</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo" style="font-weight:bolder;">Ugyen</a>
+
+                <div class="nav__menu" id="nav-menu" >
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i>About Me                              
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                               <i class="uil uil-file-alt nav__icon"></i> Certificates
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme Change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle" style="font-weight:bolder;">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+
+
+            </nav>
+            
+        </header>
+
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home" >
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/ugyen-wangchuk-13619b228" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                             <a href="https://www.instagram.com/ugyen_yeshey_wangchuk/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                             <a href="https://github.com/ugyen27" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img" >
+                            <svg class="home__blob" viewBox="0 0 200 210" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                                <mask id="mask0" mask-type="alpha" >
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x="15" y="25" href="{% static 'img/ugg.png'%}" />
+                                </g>
+                            </svg>
+                            <!-- <img src="assets/img/finalpro.png"  alt="" class="project__img"> -->
+
+                        </div>
+                        <div class="home__data">
+                            <h1 class="home__title" >Hi, I'am Ugyen, IT Professional</h1>
+                            
+                            <p class="home__description" style="margin-top: 20px;">Highly interested in Web design/Development & modern technologies where I love producing sound and efficient products.</p>
+                            <a href="#contact" class="button button-flex">
+                              Contact Me  <i class="uil uil-message button__icon"></i>
+                            </a>   
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </section>
+
+            <!--==================== ABOUT ====================-->
+           
+                <h2 class="section__title" id="about">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="{% static 'img/intro.png'%}" alt="" class="about__img" style="background-image:url(https://thumbs.gfycat.com/BitesizedDesertedBallpython-max-1mb.gif);">
+
+                    <div class="about__data">
+                        <p class="about__description" style="justify-content: center;">I am an IT enthusiast doing Web Development for the past few years. 
+                            Along with web development, I have completed Bachelor of Science in Computer Science from Gyalpozhing College of Information Technology. 
+                            I have sound efficiency in Frameworks such as Django, Flask and worked in various projects including 
+                            the association of web applications with an Internet of Things(IoT). 
+                            </p>
+
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">+03</span>
+                                <span class="about__info-name">Years<br>experience</span>
+                            </div>
+                            
+                            <div>
+                                <span class="about__info-title">+07</span>
+                                <span class="about__info-name">Total projects<br>Completed</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">+05</span>
+                                <span class="about__info-name">projects<br>Online Hosted</span>
+                            </div>
+                        </div>
+                        <div class="about__buttons">
+                            <a download="" href="{% static 'pdf/UgyenCV.pdf'%}" class="button button-flex">
+                               Download CV <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="skills">
+                <h2 class="section__title" >Certificates</h2>
+                <span class="section__subtitle"> My Achievements</span>
+
+                <div class="portfolio__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                         <!--==================== PORTFOLIO 1 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/king.jpg'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">King's Award</h3>
+                                 <p class="portfolio__description">Certificate recieved from His Majesty, King Jigme Khesar Namgyel Wangchuck for overall topper with 80% in 2014.</p>
+                                 <a href="https://yellow.bt/2016/12/09/education-royal-vision/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Read More
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+
+                          <!--==================== PORTFOLIO 2 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/freecodecamp.png'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">FreeCodeCamp Certificate</h3>
+                                 <p class="portfolio__description">This certificate is awarded for successfully completing Responsive Web Design freeCodeCamp course(300hrs).</p>
+                                 <a href="https://www.freecodecamp.org/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    FreeCodeCamp
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+
+                          <!--==================== PORTFOLIO 3 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/penetrationtesting.jpg'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">Hands-on Penetration Testing Labs 3.O</h3>
+                                 <p class="portfolio__description"> This certificate is awarded for successfully completing Hands-on Penetration Testing Labs 3.0 Udemy course.</p>
+                                 <a href="https://www.udemy.com/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Udemy.com
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+                          <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/penetrationtesting.jpg'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">OWASP top 10: Web Application Security for beginners</h3>
+                                 <p class="portfolio__description">  This certificate is awarded for successfully completing OWASP top 10 web application Security for beginners Udemy course.</p>
+                                 <a href="https://www.udemy.com/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Udemy.com
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+
+
+
+
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/techheck.jpeg'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">TECHHACK 2022</h3>
+                                 <p class="portfolio__description">  This certificate is awarded for participating in Techhack 2022 student catergory held by GCIT & DHI at Thimphu TechPark.</p>
+                                 <a href="https://innotech.dhi.bt/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Techhack 2022
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+
+                          <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/ui.png'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">UI-UX Certificate</h3>
+                                 <p class="portfolio__description"> This certificate is awarded for successfully completing UI/UX online course from Great Learning Academy.</p>
+                                 <a href="https://www.mygreatlearning.com/academy" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Great Learning Academy
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                       <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </section>
+
+<!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My Personal Voyage</span>
+                
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education (College)
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education (High-School)
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION content 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Computer Science</h3>
+                                    <span class="qualification__subtitle">Gcit-Gylapozhing College of Information Technology</span>
+                                    <div class="qualification__calender qualification__icon">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019-2023
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                              <!--==================== QUALIFICATION 4 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                 <!-- <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div> -->
+
+                                <!-- <div>
+                                    <h3 class="qualification__title">UI/UX</h3>
+                                    <span class="qualification__subtitle">Gcit-College</span>
+                                    <div class="qualification__calender qualification__icon">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020-2022
+                                    </div>
+                                </div> -->
+                               
+                            </div>
+
+                        </div>
+                        
+
+                        <!-- For working part -->
+
+
+                        <!--==================== QUALIFICATION content 2 ====================-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Mathematic Science</h3>
+                                    <span class="qualification__subtitle">THSS-Tashitse Higher Secondary School</span>
+                                    <div class="qualification__calender qualification__icon">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2017 -2018
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">Task I do</span>
+
+                <div class="services__container container grid">
+                     <!--==================== SERVICES 1====================-->
+                    <div class="services__content">
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">UI-UX <br> Design</h3>
+                    
+                    <span class="button button--flex button--small button--link services__button">
+                         View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="service__modal-title">UI-UX <br> Design</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Design visually appealing interfaces.</p>
+                                </li>
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Design buttons, icons, and visuals.</p>
+                                </li>
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Choose colors, typography, and styles.</p>
+                                </li>
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Ensure responsive and consistent design.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                       
+                </div>
+
+                   <!--==================== SERVICES 2====================-->
+                    <div class="services__content">
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">Frontend <br> Development</h3>
+                    
+                    <span class="button button--flex button--small button--link services__button">
+                         View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="service__modal-title">Frontend<br> Development</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Implement UI designs using HTML, CSS, and JavaScript.</p>
+                                </li>
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Develop responsive applications.</p>
+                                </li>
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Enhance user interactions and experiences with interactive elements.</p>
+                                </li>
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Collaborate with designers and backend developers to integrate frontend with backend systems.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                       
+                </div>
+
+                   <!--==================== SERVICES 3====================-->
+                    <div class="services__content">
+                        <i class="uil uil-pen services__icon"></i>
+                        <h3 class="services__title">Logo <br> Design</h3>
+                    
+                    <span class="button button--flex button--small button--link services__button">
+                         View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="service__modal-title">IoT</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Conduct research to understand the brand's identity and values.</p>
+                                </li>
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Create unique and memorable logo concepts.</p>
+                                </li>
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Design logos that reflect the brand's personality and target audience.</p>
+                                </li>
+                                <li class="services__modal-services">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Refine and iterate on logo designs based on feedback and brand guidelines.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                       
+                </div>
+                
+                
+
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle"> My Projects</span>
+
+                <div class="portfolio__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/slms.jpg'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">Student Leave Management System</h3>
+                                 <p class="portfolio__description">Website adaptable to all devices, with 100% responsive and Hosted online.</p>
+                                 <a href=" http://sonam024.pythonanywhere.com/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+                         <!--==================== PORTFOLIO 1 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/y.png'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">Modern Responsive Static page</h3>
+                                 <p class="portfolio__description">Website adaptable to all devices, with 100% responsive.</p>
+                                 <a href="https://ugyen27.github.io/UgyenPortfolio.github.io/index.html" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+
+                          <!--==================== PORTFOLIO 2 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/aquablue.png'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title"> Swimming Pool Reservation System</h3>
+                                 <p class="portfolio__description">Website adaptable to all devices, with 100% responsive and Hosted online.</p>
+                                 <a href="https://aquablue.onrender.com/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+
+
+                          <!--==================== PORTFOLIO 3 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/pitop.jpg'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">Flood Detection System(IoT)</h3>
+                                 <p class="portfolio__description">Website 100 % responsive and display real-time readings.</p>
+                                 <a href="https://ugyen27.pythonanywhere.com/?filename=ran.html" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/mamastore.jpg'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">MaMa Store(Medical Online Store)</h3>
+                                 <p class="portfolio__description">Website adaptable to all devices, with 100% responsive.</p>
+                                 <a href="https://www.figma.com/file/ZCeSuvxqrxywzKHn3TvACM/Mama-Pharmacy?type=design&mode=design&t=0SX6ur9KK9L5ikxY-1" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                       <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </section>
+            <!--==================== STEM OlYMPIC ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Special Moment</h2>
+                <span class="section__subtitle">Bhutan's first ever STEM OLYPIC(Science-Exhibition)</span>
+
+                <div class="portfolio__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                         <!--==================== PORTFOLIO 1 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/king1.jpg'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">With His Majesty, the fifth king Jigme Khesar Namgyel Wangchuck</h3>
+                                 <p class="portfolio__description">Year: 2017</p>
+                                  <a href="https://thebhutanese.bt/stem-olympiad-to-showcase-scientific-innovation/"  target="_blank"   class="button button--flex button--small portfolio__button">
+                                    Read more
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+
+                          <!--==================== PORTFOLIO 2 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/kk.jpg'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">National Assembly Visit</h3>
+                                 <p class="portfolio__description">Recieved a worth advice from  Ministers</p>
+                                 <a href="https://thebhutanese.bt/stem-olympiad-to-showcase-scientific-innovation/"  target="_blank"   class="button button--flex button--small portfolio__button">
+                                    Read more
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+
+                          <!--==================== PORTFOLIO 3 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
+                             <img src="{% static 'img/ug.jpg'%}" alt="" class="portfolio__img">
+
+                             <div class="portfolio__data">
+                                 <h3 class="portfolio__title">Photo Session</h3>
+                                 <p class="portfolio__description">Year: 2017</p>
+                                 <a href="https://thebhutanese.bt/stem-olympiad-to-showcase-scientific-innovation/"  target="_blank"   class="button button--flex button--small portfolio__button">
+                                    Read more
+                                    <i class="uil uil-arrow-right button__icon"></i>
+
+                                 </a>
+                             </div>
+                         </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                       <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </section>
+
+
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="project__title">You have a new idea?</h2>
+                            <p class="project__description">Contact me now and let us get start!.</p>
+                            <a href="#contact" class="button button--flex button--white">
+                                Contact Me
+                                <i class="uil uil-message project__icon button__icon"></i>
+                            </a>
+                        </div>
+                        <img src="{% static 'img/ugg.png'%}" alt="coming soon.." class="project__img">
+                    </div>
+                </div>
+
+            </section>
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact me</h2>
+
+                <span class="section__subtitle">Get in touch!</span>
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Call me</h3>
+                                <span class="contact__subtitle">+975-17781350</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">ucaywangchuk@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                           <i class="uil uil-map-marker contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Bhutan, Thimphu</span>
+                            </div>
+                        </div>
+                    </div>
+                     <form action="https://formspree.io/f/mjvqrblk" method="POST" class="contact__form grid" id="myform" onsubmit = "return validate();">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label" >Name</label>
+                                <input type="text" class="contact__input " name="name" id="name" placeholder="Enter your name" >
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label" >Email</label>
+                                <input type="text" class="contact__input" id="email" name="email" placeholder="ugyen@gmail.com" >
+                            </div>
+                        </div>
+                        <div class="contact__content">
+
+                            <label for="" class="contact__label">Project</label>
+                            <input type="text" class="contact__input" id="project" name="project" placeholder="project type">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label" >Message</label>
+                            <textarea name="message" id="message" cols="0" rows="7"  class="contact__input" ></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="button button--flex" id="send">
+                                    Send Message
+                                    <i class="uil uil-message button__icon"></i>
+                            </button>
+                            <div id="error_message">
+                        </div>
+                    </form> 
+                </div>
+
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Ugyen</h1>
+                        <span class="footer__subtitle">Frontend developer</span>
+                    </div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#services" class="footer__link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                     <div class="footer__socials">
+                         <a href="https://www.facebook.com/Anonymouscyhker" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook-f "></i>
+                         </a>
+                        <a href="https://www.instagram.com/ugyen_yeshey_wangchuk/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ugyen-wangchuk-13619b228" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                    </div>
+                   
+                </div>
+                <p class="footer__copy">&#169;ugyen.com All right reserved</p>
+                
+            </div>
+            
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+        <br><br>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="{% static 'js/main.js'%}"></script>
+        <script>
+            function validate(){
+            var name = document.getElementById("name").value;
+            var project = document.getElementById("project").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            var error_message = document.getElementById("error_message");
+
+            var text;
+            if(name  == '' || email == '' || message == '' || project == ''){
+                text = " ' Please Fill up the Form ' ";
+                error_message.innerHTML = text;
+                return false;
+            }
+            if(name.length < 5){
+                text = " ' Please Enter valid Name with more than 5 Characters ' ";
+                error_message.innerHTML = text;
+                return false;
+            }
+            if(email.indexOf("@") == -1 || email.length < 6){
+                text =  " ' Please Enter valid Email ' ";
+                error_message.innerHTML = text;
+                return false;
+            }
+            if(message.length <= 5){
+                text = "Please Enter More Than 5 Characters in Message box";
+                error_message.innerHTML = text;
+                return false;
+            }
+            // alert("Form Submitted Successfully, Thank you!");
+            // return true;
+            }    
+        </script>
+    </body>
+</html>
